@@ -30,7 +30,7 @@ your-working-dir/
 
 ```
 
-The [`CodeBook.md`](https://github.com/akohli70/Getting And Cleaning Data/assignment/CodeBook.md) describes everything about the process that has been performed to clean up the data.
+The [`CodeBook.md`](https://github.com/akohli70/Tidy-Data-Assignment/CodeBook.md) describes everything about the process that has been performed to clean up the data.
 
 The `run_analysis.R` is the main script that performs the transformation. It can be loaded in R/Rstudio and executed without any parameters.
 
