@@ -30,8 +30,8 @@ your-working-dir/
 
 ```
 
-The [`CodeBook.md`](https://github.com/akohli70/Tidy-Data-Assignment/CodeBook.md) describes everything about the process that has been performed to clean up the data.
+The [`CodeBook.md`](https://github.com/akohli70/Getting And Cleaning Data/assignment/CodeBook.md) describes everything about the process that has been performed to clean up the data.
 
 The `run_analysis.R` is the main script that performs the transformation. It can be loaded in R/Rstudio and executed without any parameters.
 
-After successful execution of the script, the results are stored in the `tidy data` directory. The script creates one file (tidydata_all.csv) with values for activities.  The script also creates one tidy file per activity (LAYING.csv, SITTING.csv, STANDING.csv, WALKING.csv, WALKING_DOWNSTAIRS.csv, WALKING_UPSTAIRS.csv)
+After successful execution of the script, the results are stored in the `tidy data` directory. The script creates one file (tidydata_all.txt) with values for activities.  The script also creates one tidy file per activity (LAYING.txt, SITTING.txt, STANDING.txt, WALKING.txt, WALKING_DOWNSTAIRS.txt, WALKING_UPSTAIRS.txt)

@@ -121,13 +121,13 @@ data_per_activity <- split(newdata,newdata$activity)
 
 Finaly the desired means are written to a file on the disk using the `write.csv` function. 
 
-The data is saved in the `tidy data` directory. The script creates one file (tidydata_all.csv) with values for activities.  The script also creates one tidy file per activity (LAYING.csv, SITTING.csv, STANDING.csv, WALKING.csv, WALKING_DOWNSTAIRS.csv, WALKING_UPSTAIRS.csv)
+The data is saved in the `tidy data` directory. The script creates one file (tidydata_all.txt) with values for activities.  The script also creates one tidy file per activity (LAYING.txt, SITTING.txt, STANDING.txt, WALKING.txt, WALKING_DOWNSTAIRS.txt, WALKING_UPSTAIRS.txt)
 
 ```
 if (! dir.exists("tidy data")) {dir.create("tidy data", showWarnings=FALSE)}
-write.csv(newdata, file="tidy data/tidydata_all.csv", row.names=FALSE)
+write.table(newdata, file="tidy data/tidydata_all.txt", row.name=FALSE)
 for (i in 1:length(data_per_activity))
-    { write.csv(data_per_activity[i], file=paste("tidy data/",names(data_per_activity[i]),".csv"),row.names = FALSE)
+    { write.table(data_per_activity[i], file=paste("tidy data/",names(data_per_activity[i]),".txt"),row.name = FALSE)
     }
 ```
 

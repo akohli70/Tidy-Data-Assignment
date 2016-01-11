@@ -69,11 +69,11 @@ data_per_activity <- split(newdata,newdata$activity)
 if (! dir.exists("tidy data")) {dir.create("tidy data", showWarnings=FALSE)}
 
 ## write all data in one file
-write.csv(newdata, file="tidy data/tidydata_all.csv", row.names=FALSE)
+write.table(newdata, file="tidy data/tidydata_all.txt", row.name=FALSE)
 
 ## Write Tidy Table per Activity
 for (i in 1:length(data_per_activity)){
-  write.csv(data_per_activity[i],
-            file=paste("tidy data/",names(data_per_activity[i]),".csv"),
-            row.names = FALSE)
+  write.table(data_per_activity[i],
+            file=paste("tidy data/",names(data_per_activity[i]),".txt"),
+            row.name = FALSE)
 }
